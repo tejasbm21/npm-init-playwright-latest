@@ -2,8 +2,9 @@ class signuppage{
     constructor (page){
         this.genderdropdown=page.locator("//span[text()=' Select ']")
         this.nametextfield=page.getByPlaceholder("Name")
-        this.youarearadiobutton=page.locator("#select2-gender-container")
-        this.YourCountrydropdown=page.locator("//input[@class='select2-search__field']")
+
+        this.youarearadiobutton=page.locator('#user_type-2')
+        this.YourCountrydropdown=page.locator("#select2-country-container")
         this.yourcountrysearch=page.locator("//input[@class='select2-search__field']")
         this.phonetextfield=page.getByPlaceholder("Phone Number")
         this.emailtextfield=page.getByPlaceholder("Email")

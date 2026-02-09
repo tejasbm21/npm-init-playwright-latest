@@ -13,7 +13,7 @@ test("signup",async({page})=>{
     await signup.nametextfield.fill(data.Name)
     await signup.youarearadiobutton.click()
     await signup.YourCountrydropdown.click()
-    await page.yourcountrysearch.fill(data.YourCountry)
+    await signup.yourcountrysearch.fill(data.YourCountry)
     await page.keyboard.press("ArrowDown")
     await page.keyboard.press("Enter")
     await signup.phonetextfield.fill(data.Phone)
