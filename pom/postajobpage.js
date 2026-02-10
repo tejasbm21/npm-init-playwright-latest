@@ -17,6 +17,8 @@ class postajobpage{
         this.citydropdown=page.locator("#select2-city-container")
         this.phonenumbertextfield=page.locator("#contact_phone")
         this.submitbutton=page.locator("#createAdBtn")
+        //this.successmessage=page.locator(".alert-success")
+        //this.errormessage=page.locator(".alert-danger")
 
     }
 }
