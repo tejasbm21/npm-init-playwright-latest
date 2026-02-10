@@ -5,3 +5,7 @@ class homepage{
     }
 }
 export default homepage
+//loginhome.js
+//loginpage.js
+//loogedinpage.js
+//postajobpage.js
