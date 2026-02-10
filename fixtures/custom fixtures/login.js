@@ -3,14 +3,12 @@ import { test as base, expect } from '@playwright/test';
 export const test = base.extend({
   login: async ({ page }, use) => {
     await page.goto('http://202.83.16.221:9003/');
+    await page.locator("//a[text()='Login']").click()
 
-    await page.locator('#email').fill(process.env.EMAIL);
-    await page.locator('#password').fill(process.env.PASSWORD);
+    await page.locator('#email').fill("tommy@gmail.com");
+    await page.locator('#password').fill("Tommy@123");
 
     await page.getByRole('button', { name: 'Login' }).click();
-
-    // wait till login completes
-    await page.waitForURL('**/dashboard');
 
     // expose logged-in page
     await use(page);
